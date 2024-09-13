@@ -3,7 +3,6 @@ import { AiOutlineUser } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 
 export default function Contact({ item, onDelete }) {
-  console.log(item.id);
   return (
     <li className={css.container}>
       <div className={css.containerData}>

@@ -10,9 +10,10 @@ const contactsSlice = createSlice({
       state.items.push(action.payload);
     },
     deleteContact: (state, action) => {
-      console.log(state.items);
-      console.log(action.payload);
-      return state.filter((contact) => contact.id !== action.payload);
+      return {
+        ...state,
+        items: state.items.filter((contact) => contact.id !== action.payload),
+      };
     },
   },
 });

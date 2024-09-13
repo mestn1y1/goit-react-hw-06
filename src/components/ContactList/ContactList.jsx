@@ -8,7 +8,6 @@ export default function ContactList() {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
   const filter = useSelector(selectFilter);
-  console.log(contacts);
 
   const handleDelete = (contactId) => {
     dispatch(deleteContact(contactId));
